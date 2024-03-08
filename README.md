@@ -48,6 +48,10 @@ The algorithm implemented in the policy_iteration is a method used to find the o
 To summarize, policy iteration iteratively improves the policy by alternating between policy evaluation and policy improvement steps until convergence is reached. The algorithm guarantees to find the optimal policy for the given MDP P with a discount factor gamma.
 ## POLICY IMPROVEMENT FUNCTION
 ~~~
+Developed by: Ranjith D
+Reg No.: 212221240044
+~~~
+~~~
 def policy_improvement(V, P, gamma=1.0):
     Q = np.zeros((len(P), len(P[0])), dtype=np.float64)
     for s in range(len(P)):
